@@ -11,13 +11,12 @@ namespace Logick.Handlers.Turn
 
         protected override void HandleEvent(DealDamageEvent evt)
         {
-            Debug.Log($"Было нанесено урона: {evt.Entity.Name}, {evt.Damage}");
             evt.Entity.CurrentHealth -= evt.Damage;
             if (evt.Entity.CurrentHealth <= 0)
             {
                 EventBus.RaiseEvent(new DestroyEvent(evt.Entity));
             }
-            Debug.Log($"Было нанесено урона: {evt.Entity.Name}, Жизней: {evt.Entity.CurrentHealth}/{evt.Entity.Health}");
+            Debug.Log($"Было нанесено урона: {evt.Entity.Name}, осталось жизней: {evt.Entity.CurrentHealth}/{evt.Entity.Health}");
         }
     }
 }

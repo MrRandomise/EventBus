@@ -13,7 +13,7 @@ namespace Logick.Visual.Tasks
 
         protected override void OnRun()
         {
-            _targetEntity.View.GetHeroAudio().PlayStatTurn();
+            _targetEntity.View.GetHeroAudio().PlayStartTurn();
             Finish();
         }
     }

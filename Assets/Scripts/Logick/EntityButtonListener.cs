@@ -10,21 +10,22 @@ namespace Logick
         [SerializeField] private HeroListView heroListView;
         [SerializeField] private Button entityButton;
         [SerializeField] private EntityConfig entity;
+
         public Action<EntityConfig> OnTargetClicked;
+
         public void OnEnable()
         {
-            entityButton.onClick.AddListener(OnButtonClick);
+            entityButton.onClick.AddListener(OnTargetClick);
         }
 
         public void OnDisable()
         {
-            entityButton.onClick.RemoveListener(OnButtonClick);
+            entityButton.onClick.RemoveListener(OnTargetClick);
         }
         
-        private void OnButtonClick()
+        private void OnTargetClick()
         {
             OnTargetClicked?.Invoke(entity);
-            Debug.Log($"Button {entity.Name} clicked");
         }
     }
 }

@@ -6,11 +6,11 @@ namespace Logick.Turn
 {
     public sealed class TurnInstaller: IInitializable, IDisposable
     {
-        private readonly Turn _turn;
+        private readonly TurnAdapter _turn;
 
         private readonly DiContainer _container;
 
-        public TurnInstaller(DiContainer container, Turn turn)
+        public TurnInstaller(DiContainer container, TurnAdapter turn)
         {
             _container = container;
             _turn = turn;

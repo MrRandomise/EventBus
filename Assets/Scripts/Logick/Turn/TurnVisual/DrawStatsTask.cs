@@ -1,3 +1,4 @@
+using UnityEngine;
 using Logick.Turn;
 
 namespace Logick.Visual.Tasks
@@ -13,6 +14,7 @@ namespace Logick.Visual.Tasks
 
         protected override void OnRun()
         {
+            Debug.Log(($"{_entity.Damage}/{_entity.CurrentHealth}"));
             _entity.View.SetStats($"{_entity.Damage}/{_entity.CurrentHealth}");
             Finish();
         }

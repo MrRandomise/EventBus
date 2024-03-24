@@ -19,10 +19,10 @@ namespace Logick.Turn.Tasks
 
         protected override void OnRun()
         {
-            if (_currentEntity.Value.TryGetEndTurnAbility(out var ability))
+            if (_currentEntity.Value.TryGetEndTurnSkills(out var skills))
             {
-                _eventBus.RaiseEvent(new AbilityUsedEvent(_currentEntity.Value));
-                ability.Run(_eventBus, _currentEntity, _attackedEntity, _entityStorage);
+                _eventBus.RaiseEvent(new SkillsUsedEvent(_currentEntity.Value));
+                skills.Run(_eventBus, _currentEntity, _attackedEntity, _entityStorage);
             }
             Finish();
         }

@@ -9,7 +9,7 @@ namespace UI
         [SerializeField] private AudioSource abilityClip;
         [SerializeField] private AudioSource deathClip;
 
-        public void PlayStatTurn()
+        public void PlayStartTurn()
         {
             startTurnClip.Play();
         }

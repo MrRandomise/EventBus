@@ -291,26 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057ac0292ed65945a8e325ebe9810119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  damage: 0
-  team: 0
-  name: 
-  view: {fileID: 8763992113062683896}
-  _globalAbility:
-    rid: -2
-  _beforeAttackAbility:
-    rid: -2
-  _afterAttackAbility:
-    rid: -2
-  _endTurnAbility:
-    rid: -2
-  _afterStrikeBackAbility:
-    rid: -2
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+  _config: {fileID: 0}
 --- !u!114 &5210940027010374250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,7 +361,7 @@ MonoBehaviour:
   heroImage: {fileID: 383512544197517689}
   stats: {fileID: 383512545822542961}
   button: {fileID: 2309213462716970167}
-  activeImage: {fileID: 383512545093365542}
+  _activeImage: {fileID: 383512545093365542}
   activeIcon: {fileID: 21300000, guid: 84bcba0cb789e481e8babd439c92edec, type: 3}
   inactiveIcon: {fileID: 21300000, guid: 758049b70da174878bc8ec6c1a5d4820, type: 3}
   activeBlur: {fileID: 1406148263}

@@ -1,10 +1,12 @@
+using Logick.Turn.Visual;
+
 namespace Logick.Turn.Tasks
 {
     public sealed class StartVisualTurnTask : TurnTask
     {
-        private readonly Turn _visualTurn;
+        private readonly VisualTurnAdapter _visualTurn;
 
-        public StartVisualTurnTask(Turn visualTurn)
+        public StartVisualTurnTask(VisualTurnAdapter visualTurn)
         {
             _visualTurn = visualTurn;
         }

@@ -62,41 +62,41 @@ namespace Logick
 
         public bool IsDead { get; set; }
         
-        public string Name => name;
+        public string Name => _config.name;
         
         public HeroView View => _config.View;
 
-        public bool TryGetGlobalAbility(out BaseSkills ability)
+        public bool TryGetGlobalSkills(out BaseSkills skills)
         {
-            ability = _config.GlobalSkills;
+            skills = _config.GlobalSkills;
             if (_config.GlobalSkills != null) return true;
             return false;
         }
         
-        public bool TryGetBeforeAttackAbility(out BaseSkills ability)
+        public bool TryGetBeforeAttackSkills(out BaseSkills skills)
         {
-            ability = _config.BeforeAttackSkills;
+            skills = _config.BeforeAttackSkills;
             if (_config.BeforeAttackSkills != null) return true;
             return false;
         }
         
-        public bool TryGetAfterAttackAbility(out BaseSkills ability)
+        public bool TryGetAfterAttackSkills(out BaseSkills skills)
         {
-            ability = _config.AfterAttackASkills;
+            skills = _config.AfterAttackASkills;
             if (_config.AfterAttackASkills != null) return true;
             return false;
         }
         
-        public bool TryGetEndTurnAbility(out BaseSkills ability)
+        public bool TryGetEndTurnSkills(out BaseSkills skills)
         {
-            ability = _config.EndTurnSkills;
+            skills = _config.EndTurnSkills;
             if (_config.EndTurnSkills != null) return true;
             return false;
         }
         
-        public bool TryGetAfterStrikeSkills(out BaseSkills ability)
+        public bool TryGetAfterStrikeSkills(out BaseSkills skills)
         {
-            ability = _config.AfterStrikeSkills;
+            skills = _config.AfterStrikeSkills;
             if (_config.AfterStrikeSkills != null) return true;
             return false;
         }

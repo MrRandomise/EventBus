@@ -9,10 +9,10 @@ namespace Logick.Turn
         [SerializeField] private bool _runOnStart = true;
         [SerializeField] private bool _runOnFinish = true;
         
-        private Turn _turn;
+        private TurnAdapter _turn;
 
         [Inject]
-        private void Construct(Turn turn)
+        private void Construct(TurnAdapter turn)
         {
             _turn = turn;
         }

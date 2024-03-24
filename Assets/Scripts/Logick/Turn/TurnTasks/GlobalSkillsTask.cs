@@ -23,19 +23,19 @@ namespace Logick.Turn.Tasks
             foreach (var entity in currentTeam)
             {
                 if(entity.IsDead) continue;
-                UseGlobalAbility(entity);
+                UseGlobalSkills(entity);
             }
 
             Finish();
         }
 
-        private void UseGlobalAbility(EntityConfig entity)
+        private void UseGlobalSkills(EntityConfig entity)
         {
-            if (entity.TryGetGlobalAbility(out var ability))
+            if (entity.TryGetGlobalSkills(out var skills))
             {
-                _eventBus.RaiseEvent(new AbilityUsedEvent(entity));
+                _eventBus.RaiseEvent(new SkillsUsedEvent(entity));
                 var tempCurrentEntity = new CurrentEntity() {Value = entity};
-                ability.Run(_eventBus, tempCurrentEntity, _attackedEntity, _entityStorage);
+                skills.Run(_eventBus, tempCurrentEntity, _attackedEntity, _entityStorage);
             }
         }
     }
