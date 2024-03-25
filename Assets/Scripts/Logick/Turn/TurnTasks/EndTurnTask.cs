@@ -15,11 +15,10 @@ namespace Logick.Turn.Tasks
 
         protected override void OnRun()
         {
-            Debug.Log("Конец хода");
             if (!_entityStorage.HasAliveHeroes(true) || !_entityStorage.HasAliveHeroes(false))
             {
                 _turnRunner.StopTurn();
-                Debug.Log("Игра окончена!!!");
+                Debug.Log("Game Over!");
             }
             Finish();
         }

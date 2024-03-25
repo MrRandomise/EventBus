@@ -106,7 +106,7 @@ namespace UI
                 .Sequence()
                 .Append(this.center.DOMove(targetPosition, this.forwardDuration).SetEase(this.attackCurve))
                 .Join(this.center.DOScale(1.25f, this.forwardDuration).SetEase(this.scaleCurve))
-                //.AppendCallback(() => this.audioPlayer.PlaySound(this.punchSFX))
+                .AppendCallback(() => this.audioPlayer.PlaySound(this.punchSFX))
                 .Append(this.center.DOMove(sourcePosition, this.backDuration))
                 .Join(this.center.DOScale(1, this.backDuration))
                 .OnComplete(() =>

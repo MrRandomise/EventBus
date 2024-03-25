@@ -17,8 +17,7 @@ namespace Logick.Turn.Tasks
         }
 
         protected override void OnRun()
-        {
-            Debug.Log("Смена персонажа");
+        {;
             if (!_entityStorage.HasAliveHeroes(!_currentEntity.Value.Team))
             {
                 Finish();

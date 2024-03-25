@@ -16,8 +16,8 @@ MonoBehaviour:
   Damage: 6
   Team: 0
   HeroName: "\u041B\u043E\u0440\u0434 \u0432\u0430\u043C\u043F\u0438\u0440"
-  View: {fileID: 0}
   CurrentHealth: 22
+  PortraitIcon: {fileID: 21300000, guid: 778d4d7ee50594cd79059847cefca69a, type: 3}
   GlobalSkills:
     rid: -2
   BeforeAttackSkills:

@@ -16,7 +16,6 @@ namespace Logick.Handlers.Turn
             {
                 EventBus.RaiseEvent(new DestroyEvent(evt.Entity));
             }
-            Debug.Log($"Было нанесено урона: {evt.Entity.Name}, осталось жизней: {evt.Entity.CurrentHealth}/{evt.Entity.Health}");
         }
     }
 }

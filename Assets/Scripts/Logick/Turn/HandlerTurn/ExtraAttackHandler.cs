@@ -12,7 +12,6 @@ namespace Logick.Handlers.Turn
         protected override void HandleEvent(ExtraAttackEvent evt)
         {
             EventBus.RaiseEvent(new DealDamageEvent(evt.TargetEntity, evt.Damage));
-            Debug.Log($"Ёкстра атака: {evt.TargetEntity.Name}, {evt.Damage}");
         }
     }
 }

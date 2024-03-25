@@ -11,7 +11,6 @@ namespace Logick.Handlers.Turn
 
         protected override void HandleEvent(HealEvent evt)
         {
-            Debug.Log($"Лечение: {evt.TargetEntity.Name}, {evt.HealAmount}");
             evt.TargetEntity.CurrentHealth =
                 Mathf.Min(evt.TargetEntity.Health, evt.TargetEntity.CurrentHealth + evt.HealAmount);
         }

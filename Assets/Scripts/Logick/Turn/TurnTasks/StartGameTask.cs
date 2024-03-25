@@ -27,7 +27,6 @@ namespace Logick.Turn.Tasks
                 Finish();
                 return;
             }
-            Debug.Log("Начало игры");
             var entities = new List<EntityConfig>();
             entities.AddRange(_entityStorage.GetTeam(true));
             entities.AddRange(_entityStorage.GetTeam(false));

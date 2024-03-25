@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 778d4d7ee50594cd79059847cefca69a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545514860528, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Name
       value: HeroView (3)
@@ -227,6 +227,10 @@ PrefabInstance:
       value: "\u041B\u043E\u0440\u0434 \u0412\u0430\u043C\u043F"
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 57628786}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 6
       objectReference: {fileID: 0}
@@ -238,6 +242,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: f867eae3bb8a8004f8e945747928e51a, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 57628787}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _endTurnAbility
       value: 4833674788419141635
@@ -287,6 +295,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: activeImage
+      value: 
+      objectReference: {fileID: 1062391191}
+    - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _activeImage
       value: 
       objectReference: {fileID: 1062391191}
@@ -306,6 +318,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &57628787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 57628784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &100271430
@@ -397,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2059f3310f8404adcac5457e5e772e52, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545514860528, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Name
       value: HeroView (2)
@@ -495,6 +518,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 165874629}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 2
       objectReference: {fileID: 0}
@@ -506,6 +533,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: b71a0001b896afc4a99e6316a4f2ab84, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 165874630}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _endTurnAbility
       value: 4833674788419141638
@@ -547,6 +578,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: activeImage
+      value: 
+      objectReference: {fileID: 163690383}
+    - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _activeImage
       value: 
       objectReference: {fileID: 163690383}
@@ -568,6 +603,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &165874630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 165874627}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &202141556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -582,7 +628,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6f26327dca38144098a004666cd0e3b3, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545514860528, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Name
       value: HeroView (1)
@@ -688,6 +734,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 202141558}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 30
       objectReference: {fileID: 0}
@@ -699,6 +749,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: 8d55f42bafd4861469e9cb20874c6eb7, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 202141559}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _endTurnAbility
       value: -2
@@ -783,6 +837,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &202141559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 202141556}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &389887956
@@ -920,7 +985,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 16ea401ccf7c8420988360f8fc9fb55d, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545514860528, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Name
       value: HeroView (3)
@@ -1018,6 +1083,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 459021464}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 4
       objectReference: {fileID: 0}
@@ -1029,6 +1098,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: 43cb7939de436f948879799194171160, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 459021465}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _globalAbility
       value: 4833674759334789126
@@ -1070,6 +1143,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: activeImage
+      value: 
+      objectReference: {fileID: 506807490}
+    - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _activeImage
       value: 
       objectReference: {fileID: 506807490}
@@ -1089,6 +1166,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &459021465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 459021462}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &495628816
@@ -1509,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c1be5b39c416140b4a270be385402427, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545093365542, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1607,6 +1695,10 @@ PrefabInstance:
       value: "\u0422\u0443\u043F\u043E\u0439 \u041E\u0440\u043A"
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 1370046841}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 8
       objectReference: {fileID: 0}
@@ -1618,6 +1710,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: e56c27a53a870b544b74bd32244214af, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 1370046842}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _beforeAttackAbility
       value: 9035553489440473088
@@ -1659,6 +1755,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: activeImage
+      value: 
+      objectReference: {fileID: 1932663392}
+    - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _activeImage
       value: 
       objectReference: {fileID: 1932663392}
@@ -1678,6 +1778,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1370046842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 1370046839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1536641731
@@ -1845,7 +1956,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f6d397e5cec894f3cbbb28a24524a3db, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545514860528, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Name
       value: HeroView (4)
@@ -1951,6 +2062,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 1827189792}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 7
       objectReference: {fileID: 0}
@@ -1962,6 +2077,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: 48940b3cdf88a5443a8a452096ab3510, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 1827189793}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _afterStrikeBackAbility
       value: 4833674759334789125
@@ -2003,6 +2122,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: activeImage
+      value: 
+      objectReference: {fileID: 1314588251}
+    - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _activeImage
       value: 
       objectReference: {fileID: 1314588251}
@@ -2022,6 +2145,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1827189793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 1827189790}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1917274683
@@ -2083,7 +2217,7 @@ PrefabInstance:
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 676aec1b4f9ee4b599aeffc9a6703a1d, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 383512545514860528, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Name
       value: HeroView (1)
@@ -2185,6 +2319,10 @@ PrefabInstance:
       value: "\u041E\u0445\u043E\u0442\u043D\u0438\u0446\u0430"
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 1991190823}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 10
       objectReference: {fileID: 0}
@@ -2196,6 +2334,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: fb43a6a41147c4542855dda645723679, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 1991190824}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _afterAttackAbility
       value: 4833674788419141634
@@ -2245,6 +2387,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: activeImage
+      value: 
+      objectReference: {fileID: 1600488066}
+    - target: {fileID: 8763992113062683896, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _activeImage
       value: 
       objectReference: {fileID: 1600488066}
@@ -2264,6 +2410,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 648961bfe2c7468cb08474073dafb4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1991190824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 1991190821}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2124721385
@@ -2403,6 +2560,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -2527,6 +2688,10 @@ PrefabInstance:
       value: "\u041F\u043E\u0436\u0438\u0440\u0430\u0442\u0435\u043B\u044C"
       objectReference: {fileID: 0}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 1141858330}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
@@ -2538,6 +2703,10 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: 826947e575bb28040aed44dcc2768bb4, type: 2}
+    - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 383512544509087721}
     - target: {fileID: 3849034897957389487, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: _endTurnAbility
       value: 4833674788419141633
@@ -2604,6 +2773,17 @@ PrefabInstance:
       objectReference: {fileID: 1769277953}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+--- !u!114 &383512544509087721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383512544197517689, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+  m_PrefabInstance: {fileID: 383512544509087720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7264787356785615202
 PrefabInstance:
   m_ObjectHideFlags: 0

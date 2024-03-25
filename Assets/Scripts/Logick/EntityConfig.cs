@@ -3,13 +3,16 @@ using Logick.HeroesSkills;
 using Sirenix.OdinInspector;
 using UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Logick
 {
     public sealed class EntityConfig : MonoBehaviour
     {
-        [SerializeField] HeroConfig _config;
-        
+        [SerializeField] private HeroConfig _config;
+        [SerializeField] private HeroView _view;
+        [SerializeField] private Image _portrait;
+
         [ShowInInspector] private bool _skipTurn;
         [ShowInInspector] private bool _cantStrikeBack;
         [ShowInInspector] private bool _skipAttackTargeting;
@@ -31,6 +34,10 @@ namespace Logick
             set => _cantStrikeBack = value;
         }
 
+        private void Awake()
+        {
+            _portrait.sprite = _config.PortraitIcon;
+        }
         private void Start()
         {
             _config.CurrentHealth = Health;
@@ -64,7 +71,7 @@ namespace Logick
         
         public string Name => _config.name;
         
-        public HeroView View => _config.View;
+        public HeroView View => _view;
 
         public bool TryGetGlobalSkills(out BaseSkills skills)
         {

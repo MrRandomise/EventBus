@@ -17,7 +17,6 @@ namespace Logick.Turn.Tasks
         {
             _turnCount++;
             _eventBus.RaiseEvent(new StartTurnEvent(_turnCount));
-            Debug.Log($"Начался {_turnCount} ход!");
             Finish();
         }
     }

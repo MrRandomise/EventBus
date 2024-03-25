@@ -21,7 +21,6 @@ namespace Logick.Turn.Tasks
 
         protected override void OnRun()
         {
-            Debug.Log($"Ход игрока {_currentEntity.Value.Name}");
             foreach (var listener in _buttons)
             {
                 listener.OnTargetClicked += OnTargetClicked;    
@@ -38,20 +37,17 @@ namespace Logick.Turn.Tasks
 
         private void OnTargetClicked(EntityConfig entity)
         {
-            Debug.Log($"Игрок ходит {entity.Name}");
             if (entity.IsDead || entity.Team == _currentEntity.Value.Team)
                 return;
             if (_currentEntity.Value.SkipAttackTargeting)
             {
                 _currentEntity.Value.SkipAttackTargeting = false;
                 _eventBus.RaiseEvent(new AttackEvent(_currentEntity.Value, _attackedEntity.Value));
-                Debug.Log($"{_currentEntity.Value.Name} атакует {_attackedEntity.Value.Name}");
             }
             else
             {
                 _eventBus.RaiseEvent(new AttackEvent(_currentEntity.Value, entity));
-                _attackedEntity.Value = entity;
-                Debug.Log($"{_currentEntity.Value.Name} атакует {entity.Name}");    
+                _attackedEntity.Value = entity;   
             }
             Finish();
         }

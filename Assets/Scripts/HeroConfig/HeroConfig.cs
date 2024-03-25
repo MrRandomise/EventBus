@@ -11,8 +11,8 @@ namespace Logick.Config
         public int Damage;
         public bool Team;
         public string HeroName;
-        public HeroView View;
         public int CurrentHealth;
+        public Sprite PortraitIcon;
 
         [SerializeReference] public BaseSkills GlobalSkills;
         [SerializeReference] public BaseSkills BeforeAttackSkills;
